@@ -45,7 +45,7 @@ No token allocations will be earmarked for airdrops nor investors nor teams. Thi
 i 8 sum pi ... and it was delicious
 {% endembed %}
 
-Once deployed on-chain, the underlying bytecodes for the _Solaxy_ contracts ossifies. It is then immutable and impervious to modifications of any kind. Right now however, the GitHub repository is open for to code contributions, bug reports, and feature ideas. You we help fine-tune and innovate this essential part of our ecosystem.
+Once deployed on-chain, the underlying bytecodes for the _Solaxy_ contracts ossifies. It is then immutable and impervious to modifications of any kind. Right now however, the GitHub repository is open to code contributions, bug reports, and feature ideas. You can help us fine-tune and innovate this essential part of our ecosystem.
 
 {% @github-files/github-code-block url="https://github.com/M3tering/Solaxy" %}
 
