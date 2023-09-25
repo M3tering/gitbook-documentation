@@ -9,31 +9,31 @@ The DePIN token, which we've named Solaxy (**SLX**) following a successful [nami
 
 When users engage in minting SLX tokens, they contribute DAI to the reserve at a rate determined by the curve algorithm. Conversely, when SLX tokens are burned, effectively reducing the token supply, DAI tokens from the reserve would be reclaimed by the burner, at a rate determined by the curve algorithm. Both burning and minting play essential roles in achieving equilibrium between token supply and demand.
 
-This linear bonding curve guarantees equitable incentives for both early and late adopters within the M3tering protocol. The curve's slope remains consistent throughout the contract's lifespan, Notably, this design reduces the typical price volatility associated with exponential curves while simultaneously redistributing some of the early adoption incentives inherent in logarithmic curves.&#x20;
-
-_Solaxy_ will feature an uncapped token supply, intricately tied to its demand and price via the bonding the linear pricing function&#x20;
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+_Solaxy_ will feature an uncapped token supply, intricately tied to its demand and price via the linear pricing function where slope; m = `0.0025` and intersect; b = `0`
 
 $$
 f(x) = mx + b
 $$
 
-Where slope; m = `0.0025` and intersect; b = `0`. To calculate the of the required DAI tokens for minting a specific amount of SLX, simply be compute the area under the linear function, which interestingly equates to the area of a trapezoid.
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+This linear bonding curve guarantees equitable incentives for both early and late adopters within the M3tering protocol. The curve's slope remains consistent throughout the contract's lifespan, Notably, this design reduces the typical price volatility associated with exponential curves while simultaneously redistributing some of the early adoption incentives inherent in logarithmic curves.&#x20;
+
+To calculate the amount of DAI tokens required to mint a specific amount of SLX, simply compute the area under the linear function, which interestingly equates to the area of a trapezoid where both `a` and `b` is calculated using `f(x)`; and `h` is the amount of SLX.&#x20;
 
 $$
 A = \frac{1}{2}\left ( a+b \right ) h
 $$
 
-where both `a` and `b` is calculated using `f(x)`; and `h` is the amount of SLX. Combining the two formulae would give us&#x20;
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Combining the two formulae would give us&#x20;
 
 $$
 A = \left (h^2+2hx\right)\frac{m}{2}
 $$
 
-While the pricing function itself adheres to a linear nature, it's worth noting that the area under the curve, and consequently the required collateral, exhibits exponential growth. This intriguing phenomenon is vividly illustrated in the graph below from actually simlating our function. You can explore this and other phenomenon for yourself using the [bondingplayground](https://bondingplayground.netlify.app/).
+While the pricing function itself adheres to a linear nature, it's worth noting that the area under the curve, and consequently the required collateral, exhibits exponential growth. This intriguing phenomenon is vividly illustrated in the graph below from actually simulating our function. You can explore this and other phenomenon for yourself using the [bondingplayground](https://bondingplayground.netlify.app/).
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
