@@ -13,6 +13,7 @@
 
 * [M3ter NFTs](token-economics/m3ter-nfts.md)
 * [Mint & Distribution](token-economics/mint-and-distribution.md)
+* [Burn & Exit fee](token-economics/burn-and-exit-fee.md)
 
 ***
 
