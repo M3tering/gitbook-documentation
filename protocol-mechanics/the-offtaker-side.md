@@ -1,6 +1,6 @@
 ---
 cover: ../.gitbook/assets/F1PvlgKWYAIbUl7.jpg
-coverY: 165
+coverY: -171.00700525394043
 ---
 
 # The Offtaker side

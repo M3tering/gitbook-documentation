@@ -1,6 +1,23 @@
+---
+cover: ../.gitbook/assets/GAGVAu7bwAAOMSm.jpg
+coverY: -218
+---
+
 # M3ter NFTs
 
-<figure><img src="../.gitbook/assets/image10.png" alt=""><figcaption></figcaption></figure>
+<div>
+
+<figure><img src="../.gitbook/assets/image5888.png" alt="" width="412"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/image5397.png" alt="" width="563"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/image7066.png" alt="" width="417"><figcaption></figcaption></figure>
+
+</div>
 
 M3ters are tokenized representation of smart electricity meters on the M3tering protocol. This means that each individual smart meter is represented by a unique NFT on the blockchain which serves as a digital certificate of ownership and authenticity for that specific smart meter. The information associated with the smart meter, such as its unique identifier, owner's wallet address, tariff, and operation states are stored as metadata within the NFT.
 

@@ -17,5 +17,3 @@ In a nutshell, `M3tering` is a _token incentivized protocol_ with the objective 
 The protocol's success hinges on its capacity to provide a reliable, clean, and cost-effective source of electricity through decentralized solar installations, thereby positively impacting the lives of millions while promoting community ownership of the energy infrastructure. Ultimately, the M3tering Protocol aims to contribute to social and economic development by providing a reliable supply of electricity to productive users and promoting sustainable energy solutions for public good.
 
 Consumers pre-pay for clean electricity using DAI stablecoins, and providers receive rewards in protocol tokens. Through network effects, the protocol fosters the growth of electrification services, driving capital expenditure into sustainable infrastructure projects and promoting cleaner energy access in the global south.
-
-##

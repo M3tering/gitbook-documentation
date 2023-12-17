@@ -1,6 +1,6 @@
 ---
-cover: ../.gitbook/assets/F0yEOtEXoAErpCz (1).jpg
-coverY: 0
+cover: ../.gitbook/assets/F0yEOtEXoAErpCz.jpg
+coverY: 294.75541795665634
 ---
 
 # Mint & Distribution

@@ -3,6 +3,8 @@ description: >-
   This document outlines the fee calculation mechanism implemented in the smart
   contract for applying a 7% exit fee on the DAI reserve during withdrawal or
   redemption.
+cover: ../.gitbook/assets/image-238150c1-eccd-4c5f-a601-5a35d81added.png
+coverY: -53
 ---
 
 # Burn & Exit fee
