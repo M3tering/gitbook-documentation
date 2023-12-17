@@ -1,6 +1,6 @@
 ---
-cover: ../.gitbook/assets/F0yEOtEXoAErpCz.jpg
-coverY: 294.75541795665634
+cover: ../.gitbook/assets/Desktop-wallpaper.png
+coverY: 369
 ---
 
 # Mint & Distribution
