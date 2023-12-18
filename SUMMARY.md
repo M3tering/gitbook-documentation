@@ -19,10 +19,15 @@
 
 * [Overview](smart-contracts/overview.md)
 * [Integration](smart-contracts/integration.md)
-* [Audits](smart-contracts/audits.md)
+* [Audits](smart-contracts/audits/README.md)
+  * [Secure3 Audit Contest](smart-contracts/audits/secure3-audit-contest.md)
 
 ***
 
 * [AI art by @EarthbasedSoul 💚](https://twitter.com/Earthbasedsoul)
 * [Discord community server](https://discord.gg/Z4AyRjh7gW)
 * [Unofficial Twitter](https://twitter.com/M3tering)
+
+## Audits
+
+* [Page 1](audits/page-1.md)
