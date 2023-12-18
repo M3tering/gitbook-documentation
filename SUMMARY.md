@@ -27,7 +27,3 @@
 * [AI art by @EarthbasedSoul 💚](https://twitter.com/Earthbasedsoul)
 * [Discord community server](https://discord.gg/Z4AyRjh7gW)
 * [Unofficial Twitter](https://twitter.com/M3tering)
-
-## Audits
-
-* [Page 1](audits/page-1.md)
