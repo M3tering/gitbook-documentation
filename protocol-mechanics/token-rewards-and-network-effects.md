@@ -21,14 +21,6 @@ This effect is in no way unique to the M3tering protocol, in fact, it is very po
 While the concept may sound promising, its success is not guaranteed. The most common setback occurs when the expected demand fails to materialize. Checkout this article by CoinMarketCap to catchup on [DePIN](https://coinmarketcap.com/alexandria/article/a-deep-dive-into-depin-decentralized-physical-infrastructure)
 {% endhint %}
 
-<div align="left" data-full-width="false">
-
-<figure><img src="../.gitbook/assets/GAyMwegX0AAgyhf.jpg" alt="" width="563"><figcaption><p>DePIN Sector Map (Dec 2023)</p></figcaption></figure>
-
- 
-
-<figure><img src="broken-reference" alt="" width="563"><figcaption><p>DePIN Sector Map: sensor &#x26; wireless (Dec 2023)</p></figcaption></figure>
-
-</div>
+<figure><img src="../.gitbook/assets/Specific-Device--1-.jpeg" alt=""><figcaption><p>DePIN sub-sector Map (Dec 2023) <a href="https://iotex.io/blog/depin-landscape-map/">https://iotex.io/blog/depin-landscape-map/</a></p></figcaption></figure>
 
 In summary, the DePIN Flywheel Effect is a dynamic process that leverages token incentives, network expansion, and increasing token value to drive self-sustaining growth and adoption of decentralized physical infrastructure networks. The continuous cycle of growth leads to greater value and benefits for the participants and the broader community.

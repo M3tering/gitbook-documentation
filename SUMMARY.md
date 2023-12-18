@@ -15,6 +15,12 @@
 * [Mint & Distribution](token-economics/mint-and-distribution.md)
 * [Burn & Exit fee](token-economics/burn-and-exit-fee.md)
 
+## Smart Contracts
+
+* [Overview](smart-contracts/overview.md)
+* [Integration](smart-contracts/integration.md)
+* [Audits](smart-contracts/audits.md)
+
 ***
 
 * [AI art by @EarthbasedSoul 💚](https://twitter.com/Earthbasedsoul)

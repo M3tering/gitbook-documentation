@@ -8,7 +8,9 @@ coverY: 92.32731137088204
 
 # What is the M3tering protocol
 
-In a nutshell, `M3tering` is a _token incentivized protocol_ with the objective of driving capital investment in solar energy projects to electrify underserved regions, especially in Latin America and sub-Saharan Africa, by incentivizing individuals and institutions to become electricity providers through on-site rooftop solar installations PPAs.&#x20;
+In a nutshell, `M3tering` is a _token incentivized protocol_ with the objective of driving capital investment in solar energy projects to electrify under-served regions, especially in Latin America and sub-Saharan Africa, by incentivizing individuals and institutions to become electricity providers through on-site rooftop solar installations PPAs.&#x20;
+
+<figure><img src=".gitbook/assets/1698646724385-q8w4d6fck3g.jpg" alt=""><figcaption><p>Image by <a href="https://twitter.com/TrinityMorphy/">TrinityMorphy</a></p></figcaption></figure>
 
 {% hint style="info" %}
 **Not familiar with PPA:** A Power Purchase Agreement (PPA) is a contract between someone who produces electricity, and a someone else that wants to buy that electricity. The producer agrees to sell the electricity they generate at a set price to the buyer for a specific period, like 5 years. It helps the producer earn money while the buyer gets a steady supply of clean power. Learn more [here](https://en.wikipedia.org/wiki/Power\_purchase\_agreement).
