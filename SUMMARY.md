@@ -4,10 +4,10 @@
 
 ## Protocol Mechanics
 
-* [Overview](protocol-mechanics/overview.md)
 * [The Provider side](protocol-mechanics/the-provider-side.md)
 * [The Offtaker side](protocol-mechanics/the-offtaker-side.md)
 * [Token Rewards & Network Effects](protocol-mechanics/token-rewards-and-network-effects.md)
+* [In Summary](protocol-mechanics/in-summary.md)
 
 ## Token Economics
 
@@ -26,4 +26,4 @@
 
 * [AI art by @EarthbasedSoul 💚](https://twitter.com/Earthbasedsoul)
 * [Discord community server](https://discord.gg/Z4AyRjh7gW)
-* [Unofficial Twitter](https://twitter.com/M3tering)
+* [Community Twitter](https://twitter.com/M3tering)
