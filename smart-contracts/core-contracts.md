@@ -8,7 +8,7 @@ cover: >-
 coverY: 114
 ---
 
-# Overview
+# Core Contracts
 
 {% embed url="https://github.com/orgs/M3tering/repositories" %}
 
@@ -38,38 +38,3 @@ Represents the onchain components of the Power Purchase Agreements (PPAs) betwee
 
 {% embed url="https://github.com/M3tering/Protocol" %}
 
-## Strategies: Claim DAI revenues
-
-Customizable contract methods for claiming revenues, used to extend the protocol contract. This allows developers to implement extensions such as DEX swaps, cross-chain messaging, create DeFi loans or to mint the new `Solaxy` tokens.
-
-## Available Strategies
-
-#### CLM-0
-
-Implements a simple transfer of the DAI revenues belonging to `msg.sender` to their account&#x20;
-
-Developer: [https://github.com/iChristwin](https://github.com/iChristwin)
-
-{% embed url="https://github.com/M3tering/CLM-0/" %}
-
-#### CLM-1
-
-Implements a strategy to mint SLX tokens to `msg.sender` account using their DAI revenues as the underlying collateral
-
-Developer: [https://github.com/iChristwin](https://github.com/iChristwin)
-
-{% embed url="https://github.com/M3tering/CLM-1/" %}
-
-#### CLM-2
-
-Implements a strategy to swap the DAI revenues belonging to `msg.sender` for SLX tokens, using the Balancer DEX on Gnosis mainnet
-
-Developer: [https://github.com/iChristwin](https://github.com/iChristwin)
-
-{% embed url="https://github.com/M3tering/CLM-2/" %}
-
-#### CLM-3
-
-Off-ramping revenues from the M3tering protocol via Monerium &#x20;
-
-{% embed url="https://github.com/M3tering/CLM-3/" %}

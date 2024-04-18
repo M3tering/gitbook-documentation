@@ -17,8 +17,12 @@
 
 ## Smart Contracts
 
-* [Overview](smart-contracts/overview.md)
-* [Deployments](smart-contracts/deployments.md)
+* [Core Contracts](smart-contracts/core-contracts.md)
+* [Claim Logic Modules (CLMs)](smart-contracts/claim-logic-modules-clms/README.md)
+  * [CLM-0](smart-contracts/claim-logic-modules-clms/clm-0.md)
+  * [CLM-1](smart-contracts/claim-logic-modules-clms/clm-1.md)
+  * [CLM-2](smart-contracts/claim-logic-modules-clms/clm-2.md)
+  * [CLM-3](smart-contracts/claim-logic-modules-clms/clm-3.md)
 * [Audits](smart-contracts/audits/README.md)
   * [Secure3 Audit Contest](smart-contracts/audits/secure3-audit-contest.md)
 
