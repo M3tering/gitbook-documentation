@@ -5,9 +5,9 @@ coverY: 369
 
 # Mint & Distribution
 
-The DePIN token, which we've named Solaxy (**SLX**) following a successful [naming contest](https://discord.com/channels/1128564139472736296/1135547222956720188)[ ](https://discord.com/channels/1128564139472736296/1135547222956720188)on the community Discord server, can be minted by anyone **using** a token bonding curve mechanism. This mechanism relies on an algorithmic approach embedded within a smart contract, where a reserve of DAI stablecoins backs the creation of SLX tokens. This reserve underpins the tokens' intrinsic value and security.
+The DePIN token, which we've named Solaxy (**SLX**) following a successful [naming contest](https://discord.com/channels/1128564139472736296/1135547222956720188)[ ](https://discord.com/channels/1128564139472736296/1135547222956720188)on the community Discord server, can be minted by anyone **using** a token bonding curve mechanism. This mechanism relies on an algorithmic approach embedded within a smart contract, where a reserve of sDAI stablecoins backs the creation of SLX tokens. This reserve underpins the tokens' intrinsic value and security.
 
-When users engage in minting SLX tokens, they contribute DAI to the reserve at a rate determined by the curve algorithm. On the other hand, when SLX tokens are burned, effectively reducing the token supply, DAI tokens from the reserve are returned to the burner at a rate determined by the curve algorithm. Both burning and minting play essential roles in achieving a balanced supply and demand.
+When users engage in minting SLX tokens, they contribute sDAI to the reserve at a rate determined by the curve algorithm. On the other hand, when SLX tokens are burned, effectively reducing the token supply, sDAI tokens from the reserve are returned to the burner at a rate determined by the curve algorithm. Both burning and minting play essential roles in achieving a balanced supply and demand.
 
 _Solaxy_ will feature an uncapped token supply, intrinsically linked to its demand and price via the linear pricing function where slope; m = `0.0025` and intersect; b = `0`
 
@@ -19,7 +19,7 @@ $$
 
 This linear bonding curve guarantees equitable incentives for both early adopters and later participants within the M3tering protocol. The curve's slope remains consistent throughout the contract's lifespan, Furthermore, this design minimizes the typical price volatility associated with exponential curves while also redistributing some of the early adoption incentives inherent in logarithmic curves.&#x20;
 
-To calculate the amount of DAI tokens required to mint a specific amount of SLX, simply compute the area under the linear function, which equates to the area of a trapezoid where both a and b are calculated based on `f(x)`; and `h` is the amount of SLX.&#x20;
+To calculate the amount of sDAI tokens required to mint a specific amount of SLX, simply compute the area under the linear function, which equates to the area of a trapezoid where both a and b are calculated based on `f(x)`; and `h` is the amount of SLX.&#x20;
 
 $$
 A = \frac{1}{2}\left ( a+b \right ) h

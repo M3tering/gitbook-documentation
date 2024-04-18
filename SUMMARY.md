@@ -18,7 +18,7 @@
 ## Smart Contracts
 
 * [Overview](smart-contracts/overview.md)
-* [Integration](smart-contracts/integration.md)
+* [Deployments](smart-contracts/deployments.md)
 * [Audits](smart-contracts/audits/README.md)
   * [Secure3 Audit Contest](smart-contracts/audits/secure3-audit-contest.md)
 

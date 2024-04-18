@@ -5,7 +5,7 @@ coverY: -171.00700525394043
 
 # The Offtaker side
 
-In the M3tering Protocol, the offtaker is typically a commercial building, a household, utility company, or any entity with electricity demand that wants to procure clean energy from the decentralized solar energy providers within the protocol in exchange for reliable energy supply or competitive electricity rates. To access the clean electricity, the offtaker pre-pays for the energy in DAI. &#x20;
+In the M3tering Protocol, the offtaker is typically a commercial building, a household, utility company, or any entity with electricity demand that wants to procure clean energy from the decentralized solar energy providers within the protocol in exchange for reliable energy supply or competitive electricity rates. To access the clean electricity, the offtaker pre-pays for the energy in xDAI. &#x20;
 
 {% hint style="info" %}
 **DAI** is an algorithmic stablecoin issued by _MakerDAO, an Ethereum based protocol, that seeks to maintain an exact ratio of one-to-one_ with U.S. dollar.

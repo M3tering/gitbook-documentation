@@ -1,8 +1,5 @@
 ---
-description: >-
-  The current codebase for the M3tering protocol has been audited by Secure3, a
-  trusted security partner of the IoTeX ecosystem. Read about the partnership
-  here.
+description: The current codebase for the M3tering protocol has been audited by Secure3,
 cover: ../../.gitbook/assets/GAxnTqLXUAAWaRq.jpg
 coverY: -39.1768826619965
 ---

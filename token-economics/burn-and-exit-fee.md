@@ -1,7 +1,7 @@
 ---
 description: >-
   This document outlines the fee calculation mechanism implemented in the smart
-  contract for applying a 7% exit fee on the DAI reserve during withdrawal or
+  contract for applying a 7% exit fee on the sDAI reserve during withdrawal or
   redemption.
 cover: ../.gitbook/assets/peakpx1.png
 coverY: -182
@@ -36,11 +36,11 @@ The collected fees are both a protective measure and a valuable resource for fun
 
 ## How it works
 
-A 7% fee is applied when a user redeems SLX. The fee is deducted from the DAI reserve. During redemption, 73.6% of the user's SLX is burnt, and the length of the linear slope of the bonding curve is reduced to 26.4% of the original slope. The area under the burnt section of the slope represents approximately 93% of the total area under the curve (DAI reserve).
+A 7% fee is applied when a user redeems SLX. The fee is deducted from the sDAI reserve. During redemption, 73.6% of the user's SLX is burnt, and the length of the linear slope of the bonding curve is reduced to 26.4% of the original slope. The area under the burnt section of the slope represents approximately 93% of the total area under the curve (sDAI reserve).
 
 ### Calculating the Withdrawal Fee
 
-The withdrawal function in the smart contract implements a 7% fee. The calculation is executed within the `computeWithdraw` function to to optimize gas usage and maintain accuracy up to 0.002 DAI.
+The withdrawal function in the smart contract implements a 7% fee. The calculation is executed within the `computeWithdraw` function to to optimize gas usage and maintain accuracy up to 0.002 sDAI.
 
 #### Example Calculation
 
@@ -64,4 +64,4 @@ Let's assume:
 
 ## In Conclusion
 
-In summary, the 7% fee is not merely a financial transaction cost; it serves as a powerful tool to influence participant behavior, mitigate specific attack risks, and provide resources for community-driven initiatives. This mechanism maintains the integrity of the bonding curve and ensures the efficient management of the DAI reserve.
+In summary, the 7% fee is not merely a financial transaction cost; it serves as a powerful tool to influence participant behavior, mitigate specific attack risks, and provide resources for community-driven initiatives. This mechanism maintains the integrity of the bonding curve and ensures the efficient management of the sDAI reserve.
