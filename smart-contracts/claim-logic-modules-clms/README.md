@@ -9,5 +9,5 @@ CLMs are customizable contract modules for claiming revenues, used to extend the
 
 ## Directory of modules
 
-{% @github-files/github-code-block url="https://github.com/m3tering/clms?tab=readme-ov-file" %}
+{% embed url="https://github.com/m3tering/clms?tab=readme-ov-file#clms" %}
 

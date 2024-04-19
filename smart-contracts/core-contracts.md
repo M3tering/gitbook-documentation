@@ -24,7 +24,7 @@ M3ter is an ERC-721 (NFT) contract where each NTF represent a smart metering dev
 
 #### Deployment Address: [<mark style="color:green;">0xF4F3c1666E750E014DE65c50d0e98B1263E678B8</mark>](https://gnosis.blockscout.com/token/0xF4F3c1666E750E014DE65c50d0e98B1263E678B8?tab=holders)
 
-Solaxy is an ERC-20 token contract that implements a linear bonding curve with DAI (a stablecoin) as the reserve currency. The bonding curve allows users to buy and sell Solaxy tokens directly from/to the contract at a dynamic price determined by the curve's slope.&#x20;
+Solaxy is an ERC-20 token contract that implements a linear bonding curve with sDAI as the reserve currency. The bonding curve allows users to buy and sell Solaxy tokens directly from/to the contract at a dynamic price determined by the curve's slope.&#x20;
 
 Solaxy extends its functionality by providing support for [`ERC-4626`](https://eips.ethereum.org/EIPS/eip-4626); a tokenized vault interface. This interface allows the Solaxy contract to interact with other DeFi protocols and platforms seamlessly. `ERC-4626` integration enhances the capabilities of Solaxy in the context of token bonding curves.
 
@@ -34,7 +34,14 @@ Solaxy extends its functionality by providing support for [`ERC-4626`](https://e
 
 #### Deployment Address: [<mark style="color:green;">0x2b3997D82C836bd33C89e20fBaEF96CA99F1B24A</mark>](https://gnosis.blockscout.com/address/0x2b3997D82C836bd33C89e20fBaEF96CA99F1B24A?tab=contact\_code)
 
-Represents the onchain components of the Power Purchase Agreements (PPAs) between the Providers and Off-takers. The `pay` function is executed by the end users to pay DAI tokens to the owner of their assigned M3ter at the time of payment.
+Represents the onchain components of the Power Purchase Agreements (PPAs) between the Providers and Off-takers. The `pay` function is executed by the end users to pay xDAI tokens to the owner of their assigned M3ter at the time of payment.
 
 {% embed url="https://github.com/M3tering/Protocol" %}
 
+### 📃 Listings: M3ter ERC-721 marketplace
+
+#### Deployment Address: <mark style="color:green;">...</mark>_<mark style="color:green;">coming soon</mark>_
+
+
+
+{% embed url="https://github.com/M3tering/Listings" %}
