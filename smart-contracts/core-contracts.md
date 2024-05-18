@@ -40,8 +40,8 @@ Represents the onchain components of the Power Purchase Agreements (PPAs) betwee
 
 ### 📃 Listings: M3ter ERC-721 marketplace
 
-#### Deployment Address: <mark style="color:green;">...</mark>_<mark style="color:green;">coming soon</mark>_
+#### Deployment Address: [<mark style="color:green;">0x1f15510D538bEC23E0ea81600EEe826514866204</mark>](https://gnosis.blockscout.com/address/0x1f15510D538bEC23E0ea81600EEe826514866204)
 
-
+Simple NFT marketplace contract for the sale of M3ter NFTs. Allows users to list M3ters for free and to purchase other M3ters with xDAI . &#x20;
 
 {% embed url="https://github.com/M3tering/Listings" %}
