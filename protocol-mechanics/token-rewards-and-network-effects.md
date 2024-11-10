@@ -28,7 +28,3 @@ In summary, the DePIN Flywheel Effect is a dynamic process that leverages token 
 ## Putting it all together
 
 Uncover the intricate connections between providers, offtakers, and the network's growth on the next page!
-
-{% content-ref url="in-summary.md" %}
-[in-summary.md](in-summary.md)
-{% endcontent-ref %}

@@ -20,7 +20,3 @@ While the typically behavior of the offtaker in the protocol is electricity cons
 ## **Unlocking network effects**
 
 Discover how positive network effects in the M3tering Protocol is captured using tokenomics, to the benefit of both the Providers and Offtakers. Dive in here!
-
-{% content-ref url="token-rewards-and-network-effects.md" %}
-[token-rewards-and-network-effects.md](token-rewards-and-network-effects.md)
-{% endcontent-ref %}

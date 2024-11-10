@@ -51,7 +51,3 @@ Overall, tokenizing our smart meters simplifies the management and governance of
 ## T**he DePIN vault** beyond NFTs
 
 Dive deep into the DePIN token's technical design. Explore the tokenomics, supply, distribution and smart contracts mechanisms that underpin the M3tering protocol.&#x20;
-
-{% content-ref url="mint-and-distribution.md" %}
-[mint-and-distribution.md](mint-and-distribution.md)
-{% endcontent-ref %}

@@ -15,7 +15,7 @@ $$
 f(x) = mx + b
 $$
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 This linear bonding curve guarantees equitable incentives for both early adopters and later participants within the M3tering protocol. The curve's slope remains consistent throughout the contract's lifespan, Furthermore, this design minimizes the typical price volatility associated with exponential curves while also redistributing some of the early adoption incentives inherent in logarithmic curves.&#x20;
 
@@ -25,7 +25,7 @@ $$
 A = \frac{1}{2}\left ( a+b \right ) h
 $$
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Combining these equations would give us&#x20;
 
@@ -50,7 +50,3 @@ i 8 sum pi ... and it was delicious
 ## Beyond Minting
 
 Dive deep into the Burn and Exit mechanism and discover how it protects the ecosystem from MEV extractions and front running attacks
-
-{% content-ref url="burn-and-exit-fee.md" %}
-[burn-and-exit-fee.md](burn-and-exit-fee.md)
-{% endcontent-ref %}

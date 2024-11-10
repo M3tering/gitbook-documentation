@@ -24,7 +24,3 @@ With the solar infrastructure set up and operational, the provider can then part
 ## Understanding the offtaker
 
 The offtaker, in the context of M3tering, is simply the consumer who buys clean electricity from providers on the platform using xDAI stablecoins. Dive deeper into the offtaker experience and see how energy consumers in underserved communities participate in the M3tering Protocol.
-
-{% content-ref url="the-offtaker-side.md" %}
-[the-offtaker-side.md](the-offtaker-side.md)
-{% endcontent-ref %}

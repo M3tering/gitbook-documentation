@@ -23,7 +23,3 @@ The protocol's success hinges on its capacity to provide a reliable, clean, and 
 ## Become a provider
 
 Own your energy and contribute to cleaner communities. Learn how to install rooftop solar and become a power provider on the M3tering platform.
-
-{% content-ref url="protocol-mechanics/the-provider-side.md" %}
-[the-provider-side.md](protocol-mechanics/the-provider-side.md)
-{% endcontent-ref %}

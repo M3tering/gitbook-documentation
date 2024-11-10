@@ -13,7 +13,3 @@ coverY: 0
 * **Network Effects and Growth**: The token design works in a way that more providers and consumers join the network, the higher the demand for the protocol's tokens becomes. This, in turn, attracts more participants to the protocol, creating a feedback loop that drives further expansion.
 
 For a more comprehensive understanding, dive deeper into the technical components of the M3tering Protocol, starting with the NFTs
-
-{% content-ref url="../token-economics/m3ter-nfts.md" %}
-[m3ter-nfts.md](../token-economics/m3ter-nfts.md)
-{% endcontent-ref %}
