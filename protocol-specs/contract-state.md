@@ -16,7 +16,7 @@ The protocol defines three core functions within its Smartweave contracts to han
 
 ### **The Register Function**
 
-The `register` function is used to register a new smart meter within the M3ter protocol. It expects a JSON object with an EVM transaction hash, which uniquely identifies the registration transaction and allows computation nodes to retrieve the registered public key for authenticating any data received from the smart meter.&#x20;
+The `register` function is used for retrieving a smart meter's public key information. This public key is essential for authenticating any data that the meter sends. To do this, it requires a JSON object that includes an EVM transaction hash.&#x20;
 
 Example input:
 
@@ -29,9 +29,14 @@ Example input:
 }
 ```
 
+During registration, the transaction emits a smart contract event that contains the token ID, public key, and address of the sender, along with a timestamp, following the ABI below:
+
+<pre class="language-solidity"><code class="lang-solidity"><strong>event Register(uint256 indexed tokenId, bytes32 indexed publicKey, address from, uint256 timestamp)
+</strong></code></pre>
+
 ### **The Topup Function**
 
-&#x20;The `topup` function allows registered participants to add balance or credits. Like `register`, this function expects an Ethereum transaction hash to verify the top-up action. This transaction hash is used to retrieve the paid amount and the current electricity tariff set on the EVM contract. The offtakers electricity balance is then incriminated accordingly. &#x20;
+The `topup` function enables offtakers to add balance or credits to their accounts. Similar to the `register` function, it requires an Ethereum transaction hash to validate the top-up transaction. This transaction hash is used to retrieve the payment amount and the current electricity tariff from the Ethereum smart contract. The participant’s electricity balance is then updated accordingly.
 
 Example input:
 
@@ -44,9 +49,15 @@ Example input:
 }
 ```
 
+For the `topup` to be processed correctly, the transaction is expected to emit a smart contract event that provides details on the top-up, including the amount paid, the tariff rate, the source address, and the timestamp, with the following ABI:
+
+```solidity
+event Revenue(uint256 indexed tokenId, uint256 indexed amount, uint256 indexed tariff, address from, uint256 timestamp)
+```
+
 ### **The Meter Function**
 
-The `meter` function is the primary function that processes data collected from smart metering hardware. It expects the payload from the meter, containing the signed data, signature, and public key. This function would compute the offtaker electricity balances and deduct usage based on real-time electricity consumption data payload posted to Arweave.
+The `meter` function is the primary function that processes data collected from smart metering hardware. It expects the payload from the meter, containing the signed data, signature, and public key. This function would compute the offtaker electricity balances and deduct usage based on real-time electricity consumption data payload posted to Arweave. For more information about this payload see [meter-payload.md](meter-payload.md "mention") documentation
 
 Example input:
 
