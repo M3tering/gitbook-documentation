@@ -6,6 +6,10 @@
 
 The core data unit in the protocol is a JSON payload sent from the smart meter, which includes energy consumption data along with cryptographic elements to ensure authenticity. This payload is carefully structured in the following order:
 
+### Message Encoding
+
+4 bytes nonce, 4 bytes energy, 64 bytes signature&#x20;
+
 1. **Data**: A stringified array that contains:
    1. **Nonce**: A sequential integer that serves as a unique identifier for each message, helping to prevent replay attacks.
    2. **Voltage**: The average voltage measurement, recorded in volts (V), with a precision of two decimal places. This value is typically averaged over a one-minute interval.
