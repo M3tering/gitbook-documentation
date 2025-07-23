@@ -6,7 +6,7 @@ The M3tering protocol uses the Arweave network to permanently log and archive al
 SmartWeave contracts on Arweave are a type of smart contract specifically designed for use on the Arweave blockchain. Rather than executing code in real time (like on Ethereum), SmartWeave contracts rely on nodes to read the entire history of a contract’s interactions to compute its current state, an idea know as "Lazy Evaluation". This approach makes SmartWeave contracts scalable and ideal for decentralized, permanent storage applications, as it reduces computational demand on the network while prioritizing data availability and integrity. See more [here](https://dev.to/fllstck/smart-contracts-on-arweave-46l8)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 While payments still happen on a secure, deterministic EVM contract using DAI, SmartWeave contracts are be used to process metering data and manage interactions between users and the smart metering infrastructure.
 

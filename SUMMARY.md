@@ -28,13 +28,16 @@
 
 ## Protocol specs
 
-* [Overview](protocol-specs/overview.md)
-* [Meter Payload](protocol-specs/meter-payload.md)
-* [Contract State](protocol-specs/contract-state.md)
+* [V2 Specification](protocol-specs/v2-specification/README.md)
+  * [Meter Payload](protocol-specs/v2-specification/meter-payload.md)
+* [V1 Specification](protocol-specs/v1-specification/README.md)
+  * [Overview](protocol-specs/v1-specification/overview.md)
+  * [Meter Payload](protocol-specs/v1-specification/meter-payload.md)
+  * [Contract State](protocol-specs/v1-specification/contract-state.md)
 
 ***
 
 * [AI art by @EarthbasedSoul 💚](https://twitter.com/Earthbasedsoul)
-* [Farcaster Channel (Warpcast)](https://warpcast.com/\~/channel/m3ter-heads)
+* [Farcaster Channel (Warpcast)](https://warpcast.com/~/channel/m3ter-heads)
 * [Discord community server](https://discord.gg/Z4AyRjh7gW)
 * [Community Twitter](https://twitter.com/M3tering)
