@@ -5,11 +5,11 @@ coverY: 0
 
 # Meter Payload
 
-## Meter Payload Overview
+## Overview
 
 At the heart of the protocol is the meter payload, a tightly packed binary data structure that carries essential information about energy consumption. By packing fields into fixed‑length byte‑segments, we minimize bandwidth requirement and storage costs. Beyond the core data, the payload format is also designed to be **extendable**: future fields (e.g. voltage, geolocation, device identifiers) can be tacked on without breaking the primary payload parser.
 
-### Meter Payload Structure
+### Payload Structure
 
 At its core, the meter payload is a tightly packed sequence of bytes designed for minimal overhead and efficient transmission. The base payload consists of a nonce, an energy value, and a digital signature. This structure is visualized below:
 
@@ -34,7 +34,7 @@ Byte Offset  Length  Field        Description
 The two most critical components of the core payload are the nonce and the energy value.
 
 * **Nonce (4 bytes)**: The **nonce** is a strictly increasing 32‑bit unsigned integer (number used once). It ensures that each payload is unique, preventing replay attacks where an attacker could resend a previously captured payload: every new reading increments this counter. Encoded as big‑endian, it occupies bytes 0–3 of the payload.
-* **Energy (4 bytes)**: The **energy** field records the cumulative kilowatt‑hours (kWh) measured, with **six decimal places** of precision. However, for the purpose of data transmission and signing, this decimal value is converted into an integer. This is achieved by multiplying the kWh value by 10⁶ to shift six decimals and converted to a 32‑bit big‑endian integer. Those 4 bytes occupy offsets 4–7 of the payload.
+* **Energy (4 bytes)**: The **energy** field records the cumulative kilowatt‑hours (kWh) measured, with **six decimal places** of precision. However, for the purpose of data transmission and signing, this decimal value is converted into an integer. This is achieved by multiplying the kWh value by 10<sup>6</sup> to shift six decimals and converted to a 32‑bit big‑endian integer. Those 4 bytes occupy offsets 4–7 of the payload.
 
 #### Signing and Verification
 
@@ -53,7 +53,7 @@ signature = Ed25519.sign(privateKey, message)  (64 bytes)
 payload   = message || signature
 ```
 
-To verify the payload, a verifier first unpacks the first 8 bytes message of the payload (containing the nonce and energy), followed by 64 bytes that contains the corresponding signature to the message. Using the meter's public key, the verifier checks if the signature is valid for the extracted 8-byte message. Once verified, the nonce and raw energy integer are unpacked from the first 8 bytes of the payload and then the energy value is re‑scaled by 10⁻⁶ to recover the original kWh reading.
+To verify the payload, a verifier first unpacks the first 8 bytes message of the payload (containing the nonce and energy), followed by 64 bytes that contains the corresponding signature to the message. Using the meter's public key, the verifier checks if the signature is valid for the extracted 8-byte message. Once verified, the nonce and raw energy integer are unpacked from the first 8 bytes of the payload and then the energy value is re‑scaled by 10<sup>-6</sup> to recover the original kWh reading.
 
 ```
 received_nonce_energy = payload[0..7]
@@ -68,7 +68,7 @@ else:
 
 ***
 
-## Payload Extension
+### Payload Extension
 
 To support richer logic and analytics, the payload can be extended to include additional data points beyond the core nonce and energy values. When extended, the additional fields are appended after the core payload's signature. The extension provides supplementary information such as voltage measurement, the meter's identity and location information. Parsers that don’t recognize it can simply ignore any trailing bytes beyond offset 72.&#x20;
 
@@ -92,4 +92,4 @@ It is important to note that the extension data is **not** covered by the core s
 The data within the extension block follows a similar integer-encoding scheme to maintain efficiency.
 
 * **Voltage:** The voltage has a precision of one decimal place. It is multiplied by 10 to be encoded as a 2-byte integer. **Example:** A voltage of `230.5 V` is encoded as `2305`.
-* **Longitude & Latitude:** Geographic coordinates have a precision of five decimal places. They are multiplied by 100,000 (10^5) to be encoded as 3-byte integers. **Example:** A latitude of `-4.81667` is encoded as `-481667`.
+* **Longitude & Latitude:** Geographic coordinates have a precision of five decimal places. They are multiplied by 10<sup>5</sup> to be encoded as 3-byte integers. **Example:** A latitude of `-4.81667` is encoded as `-481667`.
