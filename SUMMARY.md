@@ -29,6 +29,7 @@
 ## Protocol specs
 
 * [V2 Specification](protocol-specs/v2-specification/README.md)
+  * [Rollup](protocol-specs/v2-specification/rollup.md)
   * [Meter Payload](protocol-specs/v2-specification/meter-payload.md)
 * [V1 Specification](protocol-specs/v1-specification/README.md)
   * [Overview](protocol-specs/v1-specification/overview.md)
