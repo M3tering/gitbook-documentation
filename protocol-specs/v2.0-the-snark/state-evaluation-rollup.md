@@ -25,36 +25,7 @@ Diagram: Public Key Validation via Merkle-Patricia Trie Proof
 
 This diagram illustrates how eth\_getProof provides a verifiable link from a known blockhash down to a specific storage slot containing a meter's public key.
 
-```
-+--------------------------+
-| Checkpoint Block         |
-| (Block Number: N)        |
-| Blockhash: 0xabc...      |
-+-------------|------------+
-              |
-              v
-+-------------|------------+
-| State Root Hash          |  <-- Contained in the block header
-+-------------|------------+
-              | (Path determined by m3ter contract address)
-              v
-+-------------|------------+
-| Account Trie Node        |
-| (for m3ter NFT Contract) |
-+-------------|------------+
-              |
-              v
-+-------------|------------+
-| Storage Root Hash        |  <-- Root of the contract's storage
-+-------------|------------+
-              | (Path determined by storage slot of the meter's tokenId)
-              v
-+-------------|------------+
-| Storage Slot Value       |
-| Public Key: 0x123...     |  <-- The proven public key
-+--------------------------+
-
-```
+<figure><img src="../../.gitbook/assets/output-onlinetools (2).png" alt="+--------------------------+ | Checkpoint Block         | | (Block Number: N)        | | Blockhash: 0xabc...      | +-------------|------------+               |               v +-------------|------------+ | State Root Hash          |  <-- Contained in the block header +-------------|------------+               | (Path determined by m3ter contract address)               v +-------------|------------+ | Account Trie Node        | | (for m3ter NFT Contract) | +-------------|------------+               |               v +-------------|------------+ | Storage Root Hash        |  <-- Root of the contract&#x27;s storage +-------------|------------+               | (Path determined by storage slot of the meter&#x27;s tokenId)               v +-------------|------------+ | Storage Slot Value       | | Public Key: 0x123...     |  <-- The proven public key +--------------------------+"><figcaption></figcaption></figure>
 
 Once all inputs are gathered, the SP1 program executes its core logic. It iterates through the list of unseen data transactions. For each transaction, it performs two critical checks. First, it verifies the [ED25519](https://www.google.com/search?q=https://en.wikipedia.org/wiki/EdDSA%23Ed25519) signature of the transaction using the public key whose authenticity was just confirmed via the MPT proof. Second, it checks the transaction's nonce, ensuring it is exactly one greater than the last known nonce for that meter from the input blob. This sequential nonce prevents replay attacks and guarantees that each transaction is processed exactly once.
 
@@ -78,39 +49,7 @@ Diagram: The Stateless Prover Loop
 
 This diagram shows how the prover relies entirely on Ethereum for state, enabling a robust and decentralized network of participants.
 
-```
-      +-------------------------------------------------+
-      |                                                 |
-      |             Ethereum Blockchain (L1)            |
-      |                                                 |
-      |  +-----------------+   +----------------------+ |
-      |  | SSTORE2         |   | Verifier & Deployer  | |
-      |  | (State Blobs)   |   | Contract             | |
-      |  +-----------------+   +----------------------+ |
-      |                                                 |
-      +-------^-----------------|-----------^-----------+
-              | 1. Read Last    |           | 4. Write New State
-              |    State Blobs  |           |    & Proof
-              |                 |           |
-+-------------+-----------------v-----------+-------------+
-|                                                         |
-|                  Off-Chain Prover Node                  |
-|                   (Stateless Client)                    |
-|                                                         |
-|  2. Get Pending Txs   +-----------------------------+   |
-|     from P2P Network  |                             |   |
-|  -------------------> |   SP1 Proving Environment   |   |
-|                       |                             |   |
-|  3. Compute New State |  - Verify Signatures (MPT)  |   |
-|     & Generate Proof  |  - Verify Nonces            |   |
-|  <------------------- |  - Aggregate Energy         |   |
-|                       |  - Generate Groth16 Proof   |   |
-|                       +-----------------------------+   |
-|                                                         |
-+---------------------------------------------------------+
-
-
-```
+<figure><img src="../../.gitbook/assets/output-onlinetools (1).png" alt="      +------------------------------------------------------------------------------+       |                                                                              |       |                        Ethereum Blockchain (L1)                              |       |                                                                              |       |  +-----------------+                                +----------------------+ |       |  | SSTORE2         |                                | Verifier &#x26; Deployer  | |       |  | (State Blobs)   |                                | Contract             | |       |  +-----------------+                                +----------------------+ |       |                                                                              |       +-------^-----------------|----------------------------------------^-----------+               | 1. Read Last    |                                        | 4. Write New State               |    State Blobs  |                                        |    &#x26; Proof               |                 |                                        | +-------------+-----------------v----------------------------------------+---------------+ |                                                                                        | |                               Off-Chain Prover Node                                    | |                                 (Stateless Client)                                     | |                                                                                        | |  2. Get Pending Txs                                  +-----------------------------+   | |     from P2P Network                                 |                             |   | |  --------------------------------------------------> |   SP1 Proving Environment   |   | |                                                      |                             |   | |  3. Compute New State                                |  - Verify Signatures (MPT)  |   | |     &#x26; Generate Proof                                 |  - Verify Nonces            |   | |  <-------------------------------------------------- |  - Aggregate Energy         |   | |                                                      |  - Generate Groth16 Proof   |   | |                                                      +-----------------------------+   | |                                                                                        | +----------------------------------------------------------------------------------------+"><figcaption></figcaption></figure>
 
 {% embed url="https://github.com/m3tering/rollup" %}
 
