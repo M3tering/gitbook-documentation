@@ -5,7 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# Rollup
+# State Evaluation (Rollup)
 
 The M3tering Protocol introduces a specialized, high-throughput system for aggregating vast amounts of time-series data from smart meters and making it verifiably available to on-chain applications. At its core, the system functions as an **Application-Specific** [**Rollup**](https://ethereum.org/en/developers/docs/scaling/zk-rollups/), leveraging the power of zero-knowledge proofs to execute complex computations off-chain while inheriting the full security and data availability guarantees of the Ethereum mainnet.&#x20;
 
@@ -13,7 +13,7 @@ The primary challenge this system addresses is the impracticality of processing 
 
 ## Aggregation and Proving (off-chain)&#x20;
 
-At the heart of the M3tering rollup’s trust model is a formally verified cryptographic pipeline built using [**SP1** (Succinct Prover 1)](https://docs.succinct.xyz/docs/sp1/introduction), a high-performance zero-knowledge virtual machine (ZKVM) developed by Succinct Labs. SP1 enables arbitrary Rust programs to be executed in a provable environment and verified succinctly on-chain using a zk-SNARK proof system. This approach allows the M3tering Protocol to compress high-volume smart meter computations into compact proofs that can be validated on Ethereum at low cost. The meter aggregation logic is written in such a Rust program and compiled down to SP1 bytecode that targets [**SP1 Groth16 proofs**](https://docs.succinct.xyz/docs/sp1/generating-proofs/proof-types#groth16-recommended). Provers are stateless and ephemeral: they reconstruct all necessary state from Ethereum (via state blobs and MPT proofs) and does not need to maintain any historical data. This architecture makes proving accessible to any participant without requiring persistent infrastructure or privileged roles.
+An integral part of our rollup’s trust model is a formally verified cryptographic pipeline built using [**SP1** (Succinct Prover 1)](https://docs.succinct.xyz/docs/sp1/introduction), a high-performance zero-knowledge virtual machine (ZKVM) developed by Succinct Labs. SP1 enables arbitrary Rust programs to be executed in a provable environment and verified succinctly on-chain using a zk-SNARK proof system. This approach allows the M3tering Protocol to compress high-volume smart meter computations into compact proofs that can be validated on Ethereum at low cost. The meter aggregation logic is written in such a Rust program and compiled down to SP1 bytecode that targets [**SP1 Groth16 proofs**](https://docs.succinct.xyz/docs/sp1/generating-proofs/proof-types#groth16-recommended). Provers are stateless and ephemeral: they reconstruct all necessary state from Ethereum (via state blobs and MPT proofs) and does not need to maintain any historical data. This architecture makes proving accessible to any participant without requiring persistent infrastructure or privileged roles.
 
 A prover begins its work by gathering a set of inputs. These inputs are the foundation upon which the new state will be verifiably built. They include the last known state blobs for both nonces and energy, a recent Ethereum blockhash to act as a trust anchor, a collection of unprocessed meter data transactions, and cryptographic proofs of the meters' public keys.
 

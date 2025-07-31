@@ -1,4 +1,4 @@
-# Contract State
+# State Evaluation (Smartweave)
 
 The M3tering protocol uses the Arweave network to permanently log and archive all interaction data on the protocol, ensuring that a record of energy consumption and associated payments remain available and immutable for the foreseeable future. A novel smart contract standard know as SmartWeave, is used to compute the state of PPA contracts on the protocol.&#x20;
 
@@ -57,7 +57,7 @@ event Revenue(uint256 indexed tokenId, uint256 indexed amount, uint256 indexed t
 
 ### **The Meter Function**
 
-The `meter` function is the primary function that processes data collected from smart metering hardware. It expects the payload from the meter, containing the signed data, signature, and public key. This function would compute the offtaker electricity balances and deduct usage based on real-time electricity consumption data payload posted to Arweave. For more information about this payload see [meter-payload.md](meter-payload.md "mention") documentation
+The `meter` function is the primary function that processes data collected from smart metering hardware. It expects the payload from the meter, containing the signed data, signature, and public key. This function would compute the offtaker electricity balances and deduct usage based on real-time electricity consumption data payload posted to Arweave. For more information about this payload see [data-payload-format.md](data-payload-format.md "mention") documentation
 
 Example input:
 

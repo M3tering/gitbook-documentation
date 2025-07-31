@@ -1,9 +1,10 @@
 ---
-cover: ../../.gitbook/assets/image-238150c1-eccd-4c5f-a601-5a35d81added.png
-coverY: 0
+description: 'Defining: Rollup transaction data'
+cover: ../../.gitbook/assets/uplink.png
+coverY: 275.4842924501505
 ---
 
-# Meter Payload
+# Data Payload Format
 
 ## Overview
 

@@ -28,13 +28,12 @@
 
 ## Protocol specs
 
-* [V2 Specification](protocol-specs/v2-specification/README.md)
-  * [Rollup](protocol-specs/v2-specification/rollup.md)
-  * [Meter Payload](protocol-specs/v2-specification/meter-payload.md)
-* [V1 Specification](protocol-specs/v1-specification/README.md)
-  * [Overview](protocol-specs/v1-specification/overview.md)
-  * [Meter Payload](protocol-specs/v1-specification/meter-payload.md)
-  * [Contract State](protocol-specs/v1-specification/contract-state.md)
+* [V2.0: The SNARK](protocol-specs/v2.0-the-snark/README.md)
+  * [Data Payload Format](protocol-specs/v2.0-the-snark/data-payload-format.md)
+  * [State Evaluation (Rollup)](protocol-specs/v2.0-the-snark/state-evaluation-rollup.md)
+* [V1.0: The Optimistic](protocol-specs/v1.0-the-optimistic/README.md)
+  * [Data Payload Format](protocol-specs/v1.0-the-optimistic/data-payload-format.md)
+  * [State Evaluation (Smartweave)](protocol-specs/v1.0-the-optimistic/state-evaluation-smartweave.md)
 
 ***
 

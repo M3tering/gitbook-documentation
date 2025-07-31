@@ -1,4 +1,10 @@
-# Meter Payload
+---
+description: 'Defining: Smartweave interaction data'
+cover: ../../.gitbook/assets/image-29.png
+coverY: 330.58115094018063
+---
+
+# Data Payload Format
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-11-10 at 08-41-51 M3tering Protocol Data Format - Presentation - Canva.png" alt=""><figcaption></figcaption></figure>
 
@@ -33,7 +39,7 @@ PAYLOAD: ["[nonce, voltage, current, energy]", "signature", "publicKey"]
 
 ```json
 {
-  "payload": [
+  "msg.fmt": [
     "[2, 213.7, 0.38, 0.007420]",
     "9C7lPdznR9pymAIvjDPmm/mVX/uUTemapJRb8yzGKvG8or43u6V97oDPcW7ZP9HeHRZrGEf1iIkyLixAVdWsDg==",
     "JR2VNczJacY86eyyCBr1iTTT7vxKtYbfqegeTkXJD88="
