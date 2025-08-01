@@ -2,7 +2,7 @@
 description: A Verifiable Computation Layer for Meter Data
 cover: >-
   ../../.gitbook/assets/bafybeig7vgexhnre4doaqowyrhppq4mxrmy5h2kteaur73jakskhx7gcaq.png
-coverY: 0
+coverY: 293.97326058923727
 ---
 
 # State Evaluation (Rollup)
@@ -47,7 +47,7 @@ The raw transaction data processed in the batch is also posted to Ethereum's Pro
 
 ## Other Components
 
-**M3ter NFTs (ERC721):** Introduced on page[m3ter-nfts.md](../../token-economics/m3ter-nfts.md "mention"), The M3ter contract serves as both a digital registry of asset ownership and a keystore for smart meter identities. Specifically, each token maintains a 32-byte Ed25519 public key, mapped in contract storage to it's tokenId, which is used to verify the authenticity of data transmissions sent by the corresponding physical meter. Beyond identity binding, the NFT's metadata can also link to external attributes describing the physical asset—such as location, capacity, certification, or grid integration—via attestations published using the Ethereum Attestation Service (EAS). These attestations provide a decentralized way to associate rich contextual data with the M3ter NFT while maintaining compatibility with Ethereum's trust mode
+**M3ter NFTs (ERC721):** Introduced on page [m3ter-nfts.md](../../token-economics/m3ter-nfts.md "mention"), The M3ter contract serves as both a digital registry of asset ownership and a keystore for smart meter identities. Specifically, each token maintains a 32-byte Ed25519 public key, mapped in contract storage to it's tokenId, which is used to verify the authenticity of data transmissions sent by the corresponding physical meter. Beyond identity binding, the NFT's metadata can also link to external attributes describing the physical asset—such as location, capacity, certification, or grid integration—via attestations published using the Ethereum Attestation Service (EAS). These attestations provide a decentralized way to associate rich contextual data with the M3ter NFT while maintaining compatibility with Ethereum's trust mode
 
 {% embed url="https://github.com/m3tering/m3ter" %}
 

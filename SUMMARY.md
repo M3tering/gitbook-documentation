@@ -26,14 +26,14 @@
 * [Audits](smart-contracts/audits/README.md)
   * [Secure3 Audit Contest](smart-contracts/audits/secure3-audit-contest.md)
 
-## Protocol specs
+## Technical specs
 
-* [V2.0: The SNARK](protocol-specs/v2.0-the-snark/README.md)
-  * [Data Payload Format](protocol-specs/v2.0-the-snark/data-payload-format.md)
-  * [State Evaluation (Rollup)](protocol-specs/v2.0-the-snark/state-evaluation-rollup.md)
-* [V1.0: The Optimistic](protocol-specs/v1.0-the-optimistic/README.md)
-  * [Data Payload Format](protocol-specs/v1.0-the-optimistic/data-payload-format.md)
-  * [State Evaluation (Smartweave)](protocol-specs/v1.0-the-optimistic/state-evaluation-smartweave.md)
+* [V2.0 Specs](technical-specs/v2.0-specs/README.md)
+  * [Data Payload Format](technical-specs/v2.0-specs/data-payload-format.md)
+  * [State Evaluation (Rollup)](technical-specs/v2.0-specs/state-evaluation-rollup.md)
+* [Genesis specs](technical-specs/genesis-specs/README.md)
+  * [Data Payload Format](technical-specs/genesis-specs/data-payload-format.md)
+  * [State Evaluation (Smartweave)](technical-specs/genesis-specs/state-evaluation-smartweave.md)
 
 ***
 
