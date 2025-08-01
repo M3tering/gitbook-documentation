@@ -15,6 +15,15 @@
 * [Mint & Distribution](token-economics/mint-and-distribution.md)
 * [Burn & Exit fee](token-economics/burn-and-exit-fee.md)
 
+## Technical specs
+
+* [V2.0 Specs](technical-specs/v2.0-specs/README.md)
+  * [Data Payload Format](technical-specs/v2.0-specs/data-payload-format.md)
+  * [State Evaluation (Rollup)](technical-specs/v2.0-specs/state-evaluation-rollup.md)
+* [Genesis specs](technical-specs/genesis-specs/README.md)
+  * [Data Payload Format](technical-specs/genesis-specs/data-payload-format.md)
+  * [State Evaluation (Smartweave)](technical-specs/genesis-specs/state-evaluation-smartweave.md)
+
 ## Smart Contracts
 
 * [Core Contracts](smart-contracts/core-contracts.md)
@@ -25,15 +34,6 @@
   * [CLM-3](smart-contracts/claim-logic-modules-clms/clm-3.md)
 * [Audits](smart-contracts/audits/README.md)
   * [Secure3 Audit Contest](smart-contracts/audits/secure3-audit-contest.md)
-
-## Technical specs
-
-* [V2.0 Specs](technical-specs/v2.0-specs/README.md)
-  * [Data Payload Format](technical-specs/v2.0-specs/data-payload-format.md)
-  * [State Evaluation (Rollup)](technical-specs/v2.0-specs/state-evaluation-rollup.md)
-* [Genesis specs](technical-specs/genesis-specs/README.md)
-  * [Data Payload Format](technical-specs/genesis-specs/data-payload-format.md)
-  * [State Evaluation (Smartweave)](technical-specs/genesis-specs/state-evaluation-smartweave.md)
 
 ***
 

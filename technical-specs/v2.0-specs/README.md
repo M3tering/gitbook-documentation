@@ -5,7 +5,7 @@ coverY: -67.4265339626058
 
 # V2.0 Specs
 
-The M3tering 2.0 (“V2”) represents the next evolution of decentralized energy metering and market infrastructure. Building on the learnings of the genesis version and the foundational principles of secure, verifiable metering for peer-to-peer energy service markets, V2 introduces a suite of enhancements designed to meet the demands of broader protocol adoption and cross-chain deployments. It introduces a redesigned meter payload format, a trustless state evaluation engine powered by zk-rollup, and enhanced cross‑chain interoperability.
+The M3tering 2.0 (V2) represents the next evolution of decentralized energy metering and market infrastructure. Building on the learnings of the genesis version and the foundational principles of secure, verifiable metering for peer-to-peer energy service markets, V2 introduces a suite of enhancements designed to meet the demands of broader protocol adoption and cross-chain deployments. It introduces a redesigned meter payload format, a trustless state evaluation engine powered by zk-rollup, and enhanced cross‑chain interoperability.
 
 This documentation is intended for protocol integrators, application developers, infrastructure operators, and energy service providers. It outlines the core architectural changes in V2, details new on‑chain and off‑chain components, and provides guidance for deploying and interacting with the M3tering protocol.
 
