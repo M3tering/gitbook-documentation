@@ -47,10 +47,14 @@ The raw transaction data processed in the batch is also posted to Ethereum's Pro
 
 ## Other Components
 
-**M3ter NFTs (ERC721):** Introduced on page [m3ter-nfts.md](../../token-economics/m3ter-nfts.md "mention"), The M3ter contract serves as both a digital registry of asset ownership and a keystore for smart meter identities. Specifically, each token maintains a 32-byte Ed25519 public key, mapped in contract storage to it's tokenId, which is used to verify the authenticity of data transmissions sent by the corresponding physical meter. Beyond identity binding, the NFT's metadata can also link to external attributes describing the physical asset—such as location, capacity, certification, or grid integration—via attestations published using the Ethereum Attestation Service (EAS). These attestations provide a decentralized way to associate rich contextual data with the M3ter NFT while maintaining compatibility with Ethereum's trust mode
+**M3ter Tokens (ERC721)**
+
+Introduced on page [m3ter-nfts.md](../../token-economics/m3ter-nfts.md "mention"), The M3ter contract serves as both a digital registry of asset ownership and a keystore for smart meter identities. Specifically, each token maintains a 32-byte Ed25519 public key, mapped in contract storage to it's tokenId, which is used to verify the authenticity of data transmissions sent by the corresponding physical meter. Beyond identity binding, the NFT's metadata can also link to external attributes describing the physical asset—such as location, capacity, certification, or grid integration—via attestations published using the Ethereum Attestation Service (EAS). These attestations provide a decentralized way to associate rich contextual data with the M3ter NFT while maintaining compatibility with Ethereum's trust mode
 
 {% embed url="https://github.com/m3tering/m3ter" %}
 
-**Peer-to-Peer Network:** Nodes running the off-chain client software form a p2p network using protocols like [Waku](https://waku.org/) or [Streamr](https://streamr.network/). This network is used to gossip and share pending meter data transactions before they are aggregated into a proof.
+#### **Peer-to-Peer Network**
+
+Nodes running the off-chain client software form a p2p network using protocols like [Waku](https://waku.org/) or [Streamr](https://streamr.network/). This network is used to gossip and share pending meter data transactions before they are aggregated into a proof.
 
 {% embed url="https://github.com/m3tering/console" %}
