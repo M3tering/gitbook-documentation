@@ -14,7 +14,7 @@ coverY: 114
 
 ## 🤖 M3ter: ERC-721 contract&#x20;
 
-#### Deployment Address: [<mark style="color:green;">0x39fb420Bd583cCC8Afd1A1eAce2907fe300ABD02</mark>](https://gnosis.blockscout.com/token/0x39fb420Bd583cCC8Afd1A1eAce2907fe300ABD02) 
+#### Deployment Address: [<mark style="color:green;">0x39fb420Bd583cCC8Afd1A1eAce2907fe300ABD02</mark>](https://gnosis.blockscout.com/token/0x39fb420Bd583cCC8Afd1A1eAce2907fe300ABD02)<br>
 
 M3ter is an ERC-721 (NFT) contract where each NTF represent a smart metering device registerd on-chain by it's manufacturer. Similar to Helium device NFTs on Solana, or Wicrypt device NFTs on polygon.  These devices contain cryptographic secure elements used to sign energy consumption data they measure. the purpose of `keyByTokenId` is to map an NFT's `tokenId` to the cryptographic `PublicKey` for a device (bytes 32 key for ED25519 digital signature scheme), while the `tokenIdByKey` is used to reverse map the above mentioned `PublicKey` to the NTF's `tokenId`
 

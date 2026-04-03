@@ -4,8 +4,7 @@ description: coming soon
 
 # Claim Logic Modules (CLMs)
 
-CLMs are customizable contract modules for claiming revenues, used to extend the protocol contract. This allows developers to implement extensions such as DEX swaps, cross-chain messaging, create DeFi loans or to mint the new `Solaxy` tokens.\
-
+CLMs are customizable contract modules for claiming revenues, used to extend the protocol contract. This allows developers to implement extensions such as DEX swaps, cross-chain messaging, create DeFi loans or to mint the new `Solaxy` tokens.<br>
 
 ## Directory of modules
 
