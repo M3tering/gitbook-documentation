@@ -1,25 +1,25 @@
 ---
-description: >-
-  A coordination mechanism driving solar electrification & decentralization of
-  energy supply.
-cover: .gitbook/assets/F1bSt_cX0AA283-.jpg
-coverY: 92.32731137088204
+cover: .gitbook/assets/GAGVAu7bwAAOMSm.jpg
+coverY: -308.7618213660245
 ---
 
-# What is the M3tering protocol
+# M3ter NFTs
 
-In a nutshell, `M3tering` is a _token incentivized protocol,_ aimed at driving capital investment in distributed energy resources (DERs) such as rooftop solar projects and to bring clean electricity to underserved communities, especially in Latin America and sub-Saharan Africa, by incentivizing individuals and institutions to become electricity providers through rooftop solar power purchase agreements (rooftop solar PPAs).&#x20;
+<figure><img src=".gitbook/assets/twitter-avatar.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/1698646724385-q8w4d6fck3g.jpg" alt=""><figcaption><p>Image by <a href="https://twitter.com/TrinityMorphy/">TrinityMorphy</a></p></figcaption></figure>
+<div><figure><img src=".gitbook/assets/png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/[0_0].png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/{0_0}.png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/georg.png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/kingslays.png" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/ichristwin.png" alt=""><figcaption></figcaption></figure></div>
+
+M3ters are NFTs representing smart electricity meters on the EVM blockchain . This means that each individual smart meter is represented by a unique NFT, which serves as a digital proof of ownership for that specific smart meter. The information associated with the smart meter, such as its unique identifier, secure element public key, wallet address, kwh price, and operational data are stored within the NFT contract state.
 
 {% hint style="info" %}
-**Not familiar with PPA:** A Power Purchase Agreement (PPA) is a contract between someone who produces electricity, and a someone who that wants to buy that electricity. The producer agrees to sell the electricity they generate at a set price to the buyer for a specific period, like 5 years. It helps the producer earn money while the buyer secures a reliable and environmentally friendly source of electricity. Learn more [here](https://en.wikipedia.org/wiki/Power\_purchase\_agreement).
+NFTs are unique digital assets that cannot be exchanged on a one-to-one basis unlike fungible tokens. Instead, each NFT has a distinct and indivisible identity, making it unique and valuable in its own right. Learn more [here](https://www.investopedia.com/non-fungible-tokens-nft-5115211)
 {% endhint %}
 
-Consumers pre-pay for clean electricity using xDAI stablecoins. Providers receive rewards in protocol tokens. The protocol fosters the growth of electrification services through a positive feedback loop where increased participation by providers attracts more energy resources and energy users, thus driving capital into DERs and promoting cleaner energy access in the global south.
+The concept of tokenizing these devices brings numerous advantages to the protocol, offering several key benefits, including:
 
-The protocol's success hinges on its capacity to provide a reliable, clean, and cost-effective source of electricity through distributed energy resources. This will positively impact the lives of millions while promoting community ownership of the energy infrastructure. Ultimately, the M3tering Protocol aims to contribute to social and economic development by providing a reliable supply of electricity to productive users and promoting distributed energy solutions .
+* **Provenance and Ownership:** NFTs provide a transparent and immutable record of ownership for each smart meter. This helps prevent fraudulent activity and ensures that the meter's ownership history is traceable and verifiable.
+* **Interoperability:** NFTs are built on blockchain technology, making them easily transferable and tradable across different applications. This enables seamless integration and cross-platform compatibility with other blockchain-based applications and services.
+* **Value and Monetization:** The uniqueness and scarcity of NFTs can increase the value of the smart meters. Owners of these NFTs can be monitezed by leasing them, borrowing stablecoins against them or trading them on an NFT marketplece (Opeasea or Blur).
+* **Decentralized Management:** NFTs enable decentralized management and governance of smart meters. The ownership and operation of the smart meters can be governed by automated agreements stored on the blockchain, reducing the need for centralized intermediaries.
 
-## Become a provider
-
-Own your energy and contribute to cleaner communities. Learn how to install rooftop solar and become a power provider on the M3tering platform.
+Overall, tokenizing our smart meters simplifies the management and governance of these devices. All offtaker payments are directly linked to the unique token IDs of their energy provider's M3ter NFTs. This means that owning the M3ter NFT entitles you to a direct stream of income based on the electricity consumed by connected offtakers. This clear link between payments and NFTs ensures transparency and simplifies revenue distribution within the protocol.
