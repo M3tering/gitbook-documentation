@@ -1,9 +1,9 @@
 ---
-cover: .gitbook/assets/GAGVAu7bwAAOMSm.jpg
-coverY: -308.7618213660245
+cover: .gitbook/assets/Screenshot 2023-12-18 at 05-48-17 1000x Podcast.png
+coverY: 132.37112081584854
 ---
 
-# M3ter NFTs
+# M3ters
 
 <figure><img src=".gitbook/assets/twitter-avatar.png" alt=""><figcaption></figcaption></figure>
 
