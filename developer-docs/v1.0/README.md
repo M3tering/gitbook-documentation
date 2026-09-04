@@ -1,4 +1,8 @@
-# Overview
+---
+icon: code-branch
+---
+
+# V1.0 (Genesis)
 
 The M3tering Protocol specifies a framework for secure and transparent metering of electricity consumption and tracking of the associated transactions, using a combination of secure smart meter hardware and an Arweave-based smart contracts known as SmartWeave contracts.
 

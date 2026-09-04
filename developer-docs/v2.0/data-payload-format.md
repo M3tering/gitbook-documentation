@@ -1,5 +1,6 @@
 ---
 description: 'Defining: Rollup transaction data'
+icon: binary
 cover: ../../.gitbook/assets/uplink.png
 coverY: 275.4842924501505
 ---

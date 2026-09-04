@@ -1,3 +1,9 @@
+---
+icon: terminal
+cover: ../../.gitbook/assets/1000446829.png
+coverY: 267.58079918207767
+---
+
 # State Evaluation (Smartweave)
 
 The M3tering protocol uses the Arweave network to permanently log and archive all interaction data on the protocol, ensuring that a record of energy consumption and associated payments remain available and immutable for the foreseeable future. A novel smart contract standard know as SmartWeave, is used to compute the state of PPA contracts on the protocol.&#x20;

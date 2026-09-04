@@ -1,5 +1,6 @@
 ---
 description: 'Defining: Smartweave interaction data'
+icon: binary
 cover: ../../.gitbook/assets/image-29.png
 coverY: 330.58115094018063
 ---

@@ -1,9 +1,10 @@
 ---
+icon: code-merge
 cover: ../../.gitbook/assets/monzov2-OG.png
 coverY: -67.4265339626058
 ---
 
-# V2.0 Specs
+# V2.0 (Current)
 
 The M3tering 2.0 (V2) represents the next evolution of decentralized energy metering and market infrastructure. Building on the learnings of the genesis version and the foundational principles of secure, verifiable metering for peer-to-peer energy service markets, V2 introduces a suite of enhancements designed to meet the demands of broader protocol adoption and cross-chain deployments. It introduces a redesigned meter payload format, a trustless state evaluation engine powered by zk-rollup, and enhanced cross‑chain interoperability.
 

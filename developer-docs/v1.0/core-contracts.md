@@ -2,8 +2,9 @@
 description: >-
   Overview of the 4 main source codes repositories implemented under the
   M3tering Protocol
+icon: file-brackets-curly
 cover: >-
-  ../.gitbook/assets/Screenshot 2023-12-18 at 05-59-33 (351) Dear Alice -
+  ../../.gitbook/assets/Screenshot 2023-12-18 at 05-59-33 (351) Dear Alice -
   YouTube.png
 coverY: 114
 ---
