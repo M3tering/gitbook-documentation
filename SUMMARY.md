@@ -1,6 +1,7 @@
 # Table of contents
 
 * [M3ters](README.md)
+* [The M3tering Protocol](the-m3tering-protocol.md)
 * [V1.0 (Genesis)](v1.0-genesis/README.md)
   * [Data Payload Format](v1.0-genesis/data-payload-format.md)
   * [State Evaluation (Smartweave)](v1.0-genesis/state-evaluation-smartweave.md)
