@@ -115,3 +115,7 @@ In one sentence
 > **A M3ter NFT is the persistent onchain identity and cryptographic key registry for a physical metering endpoint, linking its ownership, descriptive context, verified energy state, and application agreements through one stable token ID.**
 
 The NFT makes the meter addressable. The device signature makes its reports authentic. Together, these functions allow a physical energy resource to participate as a first-class actor in the energy internet.
+
+{% content-ref url="v2.0/" %}
+[v2.0](v2.0/)
+{% endcontent-ref %}

@@ -4,7 +4,7 @@
 
 ## Developer Docs
 
-* [M3ters](developer-docs/m3ters.md)
+* [M3ters](developer-docs/m3ters.md "M3ter NFTs")
 * [V1.0 (Genesis)](developer-docs/v1.0/README.md)
   * [Data Payload Format](developer-docs/v1.0/data-payload-format.md)
   * [State Evaluation (Smartweave)](developer-docs/v1.0/state-evaluation-smartweave.md)
